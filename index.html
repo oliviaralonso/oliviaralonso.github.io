@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olivia R. Alonso | Marketing &amp; Brand Portfolio</title>
+<meta name="description" content="Olivia R. Alonso, brand strategist. Case studies in physician recruitment, rebranding, and brand launches.">
+<meta property="og:title" content="Olivia R. Alonso | Marketing &amp; Brand Portfolio">
+<meta property="og:description" content="Brand strategist and marketing designer. I plan the brand, then I bring it to life.">
+<meta name="theme-color" content="#16233B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316233B'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%23D8C9B0'%3EORA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600;1,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* The whole palette: navy, sand, white, and sage */
+  --navy:#16233B; --sand:#D8C9B0; --white:#fff; --mist:#9CA487;
+  --ink:var(--navy); --muted:var(--navy); --steel-deep:var(--navy); --steel:var(--sand);
+  --line:var(--mist); --paper:var(--white);
+  --title:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --text:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sec:clamp(4.5rem,9vw,7rem);
+  /* Type scale: use only these sizes */
+  --fs-h2:clamp(2rem,3.4vw,2.75rem); --fs-h3:clamp(1.6rem,2.2vw,2rem); --fs-lead:1.125rem; --fs-body:1.0625rem; --fs-small:.9rem; --fs-label:.75rem; --wrap:1200px; --gut:clamp(1.25rem,4vw,2.5rem);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--paper);color:var(--ink);font:400 var(--fs-body)/1.65 var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--title);font-style:italic;font-weight:700;line-height:1.02;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+.eyebrow{font:600 var(--fs-label)/1 var(--text);letter-spacing:.18em;text-transform:uppercase}
+.lines{background-image:repeating-linear-gradient(0deg,transparent 0 9px,rgba(255,255,255,.045) 9px 10px)}
+.skip{position:absolute;left:-999px;top:0;background:var(--sand);color:var(--navy);padding:.6rem 1rem;z-index:100}
+.skip:focus{left:1rem;top:1rem}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:0 1.4rem;border-radius:999px;font:500 var(--fs-small)/1 var(--text);text-decoration:none;border:1px solid transparent;transition:background .3s var(--ease),color .3s var(--ease),border-color .3s,transform .3s var(--ease)}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+/* Each button hovers to the look of the button beside it */
+.btn-sand{background:var(--sand);color:var(--navy);border-color:var(--sand)}
+.btn-sand:hover{background:transparent;color:var(--sand)}
+.btn-ghost{border-color:var(--sand);color:var(--sand)}
+.btn-ghost:hover{background:var(--sand);color:var(--navy)}
+.btn-navy{background:var(--navy);color:var(--sand);border-color:var(--navy)}
+.btn-navy:hover{background:transparent;color:var(--navy)}
+.btn-line{border-color:var(--navy);color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:var(--sand)}
+
+/* Nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,color .35s;color:var(--white)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4.5rem}
+.mark{font:italic 700 1.7rem/1 var(--title);text-decoration:none;color:var(--sand)}
+.mark span{color:var(--mist)}
+.nav ul{display:flex;gap:clamp(1rem,3vw,2.2rem);list-style:none;padding:0}
+.nav ul a{text-decoration:none;font-size:var(--fs-small);font-weight:500;position:relative;padding:.4rem 0}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav ul a:hover::after{transform:scaleX(1)}
+.nav.solid{background:rgba(255,255,255,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--navy);box-shadow:0 1px 0 var(--line)}
+.nav.solid .mark{color:var(--sand)}
+
+/* Hero */
+.hero{min-height:75svh;background-color:var(--navy);color:var(--white);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.hero-in{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:7rem;padding-bottom:4.5rem;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.4rem,9vw,8.5rem);line-height:.95;color:var(--sand);white-space:nowrap}
+.hero h1 .r{color:var(--mist)}
+.hero .tag{font:500 clamp(.72rem,1.25vw,.95rem)/1.6 var(--text);letter-spacing:.18em;text-transform:uppercase;color:var(--white);margin-top:2.4rem}
+@media(min-width:1000px){.hero .tag{white-space:nowrap}}
+.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.4rem}
+
+/* About */
+.about{padding-block:var(--sec)}
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:stretch}
+.card-sand{background:var(--sand);padding:clamp(1.8rem,4vw,3rem);position:relative;display:flex;flex-direction:column}
+.card-sand .eyebrow{color:var(--white)}
+.portrait{width:var(--pw,15rem);aspect-ratio:4/5;background:var(--mist);border:1px solid var(--navy);display:grid;place-items:center;margin:1.6rem 0 1.8rem;font:italic 1.3rem var(--title);color:var(--muted);overflow:hidden;box-shadow:8px 8px 0 var(--navy)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.about h2{font-size:var(--fs-h2);color:var(--mist)}
+.about .lead.strong{font-weight:600}
+.about h2 span{display:block}
+.about .lead{margin-top:1.1rem;color:var(--ink);max-width:36ch;font-size:var(--fs-lead)}
+.contact{margin-top:auto;padding-top:2rem;display:flex;gap:.6rem;flex-wrap:wrap}
+.card-sand .btn{padding:0 1.15rem}
+.brief{display:flex;flex-direction:column;background:var(--white);padding:.6rem clamp(1.4rem,3vw,2.4rem);border-top:4px solid var(--navy);box-shadow:0 30px 60px -40px rgba(22,35,59,.35)}
+.brief>div{flex:1;display:grid;grid-template-columns:2.4rem 1fr;column-gap:1rem;row-gap:.5rem;align-items:baseline;align-content:center;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.brief>div:last-child{border-bottom:0}
+.brief .n{font:600 var(--fs-label) var(--text);letter-spacing:.12em;color:var(--sand)}
+.brief dt{font:italic 600 var(--fs-h3)/1.05 var(--title);color:var(--sand)}
+.brief dd{margin:0;color:var(--ink);grid-column:2}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(3rem,6vw,4.5rem);border-block:1px solid var(--line)}
+.stat{padding:2rem 1.4rem;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font:italic 400 clamp(2.6rem,5vw,4rem)/1 var(--title);color:var(--navy)}
+.stat span{display:block;margin-top:.6rem;color:var(--muted);font-size:.92rem}
+
+/* Index */
+.index{background:var(--mist);border-block:1px solid var(--line);padding-block:var(--sec)}
+.sec-head{margin-bottom:2.8rem}
+.sec-head .eyebrow{color:var(--white);margin-bottom:1rem}
+.sec-head h2{font-size:var(--fs-h2);color:var(--sand)}
+.sec-head h2+p{color:var(--navy);margin-top:.8rem}
+.index-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;column-gap:1.25rem;row-gap:0}
+.index-in .icard{grid-row:span 4;display:grid;grid-template-rows:subgrid;grid-template-columns:minmax(0,1fr);min-width:0;overflow:hidden;row-gap:0;margin-bottom:1.25rem}
+.icard{background:var(--white);border:1px solid var(--navy);padding:0;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
+.icard:hover{transform:translateY(-4px);box-shadow:10px 10px 0 var(--sand);border-color:var(--navy)}
+.icard .top{display:flex;flex-direction:column;gap:.7rem;background:var(--navy);padding:1.4rem 1.8rem 1.6rem}
+.icard .num{white-space:nowrap}
+.icard h3 span{display:block;white-space:nowrap}
+.icard .tags{white-space:nowrap;letter-spacing:.09em!important}
+@media(max-width:1100px){.icard .tags{white-space:normal}}
+.icard ul{padding:.6rem 2rem 1.6rem!important}
+.icard .num{font:600 var(--fs-label) var(--text);letter-spacing:.12em;color:var(--sand)}
+.icard h3{font-weight:600;font-size:var(--fs-h3);line-height:1.05;color:var(--sand)}
+.icard ul{list-style:none;padding:0}
+.icard li a{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;text-decoration:none;color:var(--muted);border-bottom:1px dashed var(--line);transition:color .25s,padding .3s var(--ease)}
+.icard li:last-child a{border-bottom:0}
+.icard li a svg{width:15px;height:15px;opacity:0;transform:translateX(-6px);transition:.3s var(--ease)}
+.icard li a:hover{padding-left:.35rem;text-decoration:underline;text-underline-offset:4px}
+.icard li a:hover svg{opacity:1;transform:none}
+
+/* Work */
+.group{background:var(--navy);color:var(--sand);margin-top:clamp(4rem,8vw,6rem)}
+.group:first-child{margin-top:0}
+.group .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-block:1.6rem}
+.group h2{font-size:var(--fs-h2)}
+.group .eyebrow{color:var(--steel)}
+.work{padding-top:clamp(3rem,6vw,4.5rem)}
+.work:last-child{padding-bottom:clamp(5rem,9vw,7rem)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;margin-bottom:1.8rem}
+.head .eyebrow{color:var(--muted);margin-bottom:.8rem}
+.head h3{font-weight:600;font-size:var(--fs-h2);color:var(--mist)}
+.head p{color:var(--muted);margin-top:.5rem;max-width:44ch}
+.arrows{display:flex;gap:.5rem;flex-shrink:0}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1px solid var(--navy);background:none;color:var(--navy);cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
+.arrows button svg{width:18px;height:18px}
+.arrows button:hover:not(:disabled){background:var(--navy);color:var(--white)}
+.arrows button:disabled{opacity:.25;cursor:default}
+.track{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 12px 16px 0;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.track{cursor:grab}
+.track.dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.track.dragging .frame{pointer-events:none}
+.slide{flex:0 0 calc((100% - 1.5rem)/2.12);scroll-snap-align:start}
+.frame{position:relative;box-shadow:8px 8px 0 var(--sand);aspect-ratio:4/3;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;padding:.7rem;overflow:hidden;transition:box-shadow .4s var(--ease),transform .4s var(--ease)}
+button.frame{width:100%;cursor:zoom-in}
+.frame.tall{align-items:start}
+.frame.whole{background:var(--white)}
+.frame.tall img{object-fit:cover;object-position:top}
+.frame img[data-fit="contain"]{object-fit:contain!important;object-position:center!important}
+.frame:has(img[data-fit="contain"]){align-items:center!important}
+.slide:hover .frame{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--sand)}
+.frame{grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)}
+.frame img{width:100%;height:100%;min-height:0;object-fit:contain}
+.ph{width:100%;height:100%;border:1px dashed var(--mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(156,164,135,.14) 14px 15px)}
+.ph svg{width:30px;height:30px;color:var(--navy)}
+.ph span{font:italic var(--fs-lead) var(--title);color:var(--muted)}
+.slide figcaption{margin-top:1rem;font-size:var(--fs-small);color:var(--muted);display:flex;gap:.8rem}
+.slide figcaption b{font-weight:600;color:var(--steel-deep);letter-spacing:.08em;font-size:.75rem;padding-top:.15rem}
+.progress{height:3px;background:linear-gradient(var(--navy),var(--navy)) center/100% 1px no-repeat;margin-top:1.2rem;position:relative;overflow:hidden}
+.progress i{position:absolute;inset:0 auto 0 0;background:var(--navy);width:30%;transition:transform .2s linear,width .2s}
+
+/* Case studies */
+.icard .sum{padding:1.4rem 1.8rem .4rem;color:var(--navy)}
+.icard .tags{padding:0 1.8rem;color:var(--navy);font:600 var(--fs-label)/1.6 var(--text);letter-spacing:.14em;text-transform:uppercase}
+.icard .go{margin:0 1.8rem 1.8rem;padding-top:1.2rem;align-self:end;justify-self:start;display:inline-flex;align-items:center;gap:.5rem;font-weight:600;color:var(--navy);text-decoration:none}
+.icard .go svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.icard .go:hover svg{transform:translateX(4px)}
+.index-more{margin-top:2rem;color:var(--navy)}
+.index-more a{font-weight:600;text-underline-offset:4px}
+.case{padding-top:var(--sec)}
+.case-top{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem)}
+.case h3{font-weight:700;font-size:var(--fs-h2);color:var(--mist)}
+.case .lead{margin-top:1.2rem;font-size:var(--fs-lead);max-width:46ch}
+.role{margin-top:2rem;border-top:4px solid var(--navy)}
+.role div{display:grid;grid-template-columns:7rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.role dt{font:600 var(--fs-label)/1.9 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+.role dd{margin:0}
+.case-top{align-items:stretch}
+.case-left{display:flex;flex-direction:column}
+.story{display:flex;flex-direction:column;background:var(--white);padding:.6rem clamp(1.4rem,3vw,2.4rem);border-top:4px solid var(--navy);box-shadow:0 30px 60px -40px rgba(22,35,59,.35)}
+.story>div{display:grid;grid-template-columns:2.4rem 1fr;column-gap:1rem;row-gap:.5rem;align-items:baseline;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.story>div:last-child{border-bottom:0}
+.story .n{font:600 var(--fs-label) var(--text);letter-spacing:.12em;color:var(--sand)}
+.story h4{font:italic 600 var(--fs-h3)/1.05 var(--title);color:var(--sand)}
+.story p,.story ul{grid-column:2;margin:0}
+.story ul{padding-left:1.1rem}
+.story li{margin-top:.25rem}
+.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;flex:1 0 auto;background:var(--navy);color:var(--white)}
+.results.stack{grid-template-columns:1fr}
+.results.stack div{border-left:0!important}
+.results.stack div+div{border-top:1px solid var(--mist)}
+.role{margin-bottom:2rem}
+.results div{padding:1.6rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
+.results div:nth-child(even){border-left:1px solid var(--mist)}
+.results div:nth-child(n+3){border-top:1px solid var(--mist)}
+.results b{display:block;font:italic 700 var(--fs-h2)/1 var(--title);color:var(--sand)}
+.results span{display:block;margin-top:.7rem;font-size:var(--fs-small)}
+.results b .todo{display:inline;margin:0;font:inherit}
+.case{padding-bottom:var(--sec)}
+.case .work:last-child{padding-bottom:0}
+#sections .group{margin-top:0}
+.case .head{margin-bottom:1.4rem}
+.case .head .eyebrow{color:var(--navy);margin:0}
+.case .work{padding-top:clamp(3rem,6vw,4.5rem)}
+.case .frame{align-items:start}
+.case .frame img{object-fit:cover;object-position:left top}
+.ph small{font:500 var(--fs-small)/1.4 var(--text);color:var(--navy);text-align:center;max-width:26ch}
+
+/* More work */
+.more-band{background:var(--sand)}
+.more{padding-block:var(--sec)}
+.grid .frame{box-shadow:8px 8px 0 var(--navy);border-color:var(--navy);align-items:start}
+.grid .slide:hover .frame{box-shadow:12px 12px 0 var(--navy)}
+.grid .frame img{object-fit:cover;object-position:left top}
+.more .head h3{font-weight:700;font-size:var(--fs-h2);color:var(--mist)}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap}
+.filters button{min-height:44px;padding:0 1.1rem;border-radius:999px;border:1px solid var(--navy);background:none;color:var(--navy);cursor:pointer;font-weight:500;font-size:var(--fs-small)}
+.filters button[aria-pressed="true"],.filters button:hover{background:var(--navy);color:var(--sand)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.8rem 1.5rem}
+.grid .slide[hidden]{display:none}
+.grid .slide figcaption{font-size:var(--fs-small)}
+
+/* Footer */
+footer{background-color:var(--navy);color:var(--sand)}
+.foot-in{padding-block:var(--sec) 3rem;text-align:left}
+footer .eyebrow{color:var(--white)}
+footer h2{color:var(--mist);font-size:clamp(3rem,9vw,7rem);margin:1.4rem 0 2.2rem}
+footer h2 em{color:var(--sand)}
+footer .cta{display:flex;gap:.8rem;justify-content:flex-start;flex-wrap:wrap}
+.foot-bar{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--white);margin-top:var(--sec);padding-top:1.6rem;font-size:var(--fs-small);color:var(--white)}
+.foot-bar a{color:var(--white);text-underline-offset:4px}
+
+/* Lightbox */
+dialog{border:0;padding:0;margin:auto;background:transparent;max-width:92vw;max-height:92vh}
+dialog::backdrop{background:rgba(22,35,59,.88);backdrop-filter:blur(4px)}
+dialog img{max-width:92vw;max-height:84vh;object-fit:contain;background:var(--white)}
+dialog.tall{width:min(92vw,720px);max-height:92vh;overflow-y:auto;margin:auto;inset:0}
+dialog.tall img{max-height:none;max-width:none;width:100%}
+dialog .lb-count{color:var(--sand);text-align:center;margin-top:.8rem;font-size:var(--fs-small);letter-spacing:.12em}
+dialog .lb-count:empty{display:none}
+dialog button{position:fixed;width:48px;height:48px;border-radius:50%;border:1px solid var(--sand);background:var(--navy);color:var(--sand);cursor:pointer;font-size:1.4rem;display:grid;place-items:center;z-index:2}
+dialog button svg{width:20px;height:20px}
+dialog .lb-close{top:1rem;right:1rem}
+dialog .lb-prev{left:1rem;top:50%;translate:0 -50%}
+dialog .lb-next{right:1rem;top:50%;translate:0 -50%}
+dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
+@media(max-width:600px){dialog .lb-prev,dialog .lb-next{top:auto;bottom:1rem;translate:none}}
+
+/* Reveal */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .index-in{grid-template-columns:1fr}
+  .case-top{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  .nav ul li:first-child{display:none}
+  .slide{flex-basis:86%}
+  .head{flex-direction:column;align-items:start}
+  .stat{padding:1.5rem 1rem}
+  .group .wrap{flex-direction:column;gap:.3rem}
+  .grid{grid-template-columns:1fr}
+  .role div{grid-template-columns:1fr;gap:.2rem}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{transition-duration:0s!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Olivia R. Alonso, back to top">O<span>R</span>A</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work-index">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero lines" id="top">
+  <div class="wrap hero-in">
+    <h1>Olivia <span class="r">R.</span> Alonso</h1>
+    <p class="tag">Versatile marketing professional with a passion for creative storytelling</p>
+    <div class="cta">
+      <a class="btn btn-sand" href="#work-index">See the work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="#about">Meet Olivia</a>
+    </div>
+  </div>
+</header>
+
+<section class="about wrap" id="about">
+  <div class="about-grid">
+    <div class="card-sand reveal">
+      <p class="eyebrow">About</p>
+      <!-- Headshot: swap images/olivia-alonso.jpg to change the photo -->
+      <div class="portrait"><img src="images/olivia-alonso.jpg" alt="Olivia R. Alonso" width="900" height="1599"></div>
+      <h2><span>First I plan the brand,</span> <span>then I bring it to life.</span></h2>
+      <p class="lead strong">Most strategists hand off the strategy.<br>I build the campaign that follows it.</p>
+      <p class="lead">When the person who sets the strategy also makes the creative, nothing gets lost in translation. Every piece stays on message, and ideas move from plan to market faster.</p>
+      <div class="contact">
+        <a class="btn btn-navy" href="mailto:olivia.r.alonso@gmail.com">Start a conversation</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/oliviaalonso/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </div>
+    <dl class="brief reveal">
+      <div><span class="n">01</span><dt>The role</dt><dd>Brand strategist with five years of experience across B2B and B2C marketing. I shape positioning and messaging, then carry them into every asset a campaign needs.</dd></div>
+      <div><span class="n">02</span><dt>The reach</dt><dd>Multiple brands under one roof, each with a distinct voice and a shared standard. Every name stands on its own while the whole family feels connected.</dd></div>
+      <div><span class="n">03</span><dt>The range</dt><dd>Out-of-home to in-hand: advertising, digital, and print that converts. I move between billboards, emails, and flyers without losing the story.</dd></div>
+      <div><span class="n">04</span><dt>The routine</dt><dd>Test it, measure it, then make the next one better. Real results guide the creative, and I keep refining every piece until the work earns its place.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<nav class="index" id="work-index" aria-label="Portfolio sections">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2>The work, in context</h2>
+      <p>Three case studies, from first idea to real results.</p>
+    </div>
+    <div class="index-in" id="index"></div>
+    <p class="index-more reveal">Looking for more? <a href="#more-work">See additional work</a>.</p>
+  </div>
+</nav>
+
+<main id="sections"></main>
+
+<div class="more-band"><section class="more wrap" id="more-work" aria-labelledby="more-title">
+  <div class="head reveal"><div><h3 id="more-title">More work</h3><p>A selection of campaigns across various brands.</p></div>
+    <div class="filters" role="group" aria-label="Filter work">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="Digital" aria-pressed="false">Digital</button>
+      <button type="button" data-f="Print" aria-pressed="false">Print</button>
+    </div>
+  </div>
+  <div class="grid" id="more-grid"></div>
+</section></div>
+
+<footer class="lines" id="contact">
+  <div class="wrap foot-in">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s tell a <em>story.</em></h2>
+    <div class="cta">
+      <a class="btn btn-sand" href="mailto:olivia.r.alonso@gmail.com">Start a conversation</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/oliviaalonso/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+    <div class="foot-bar">
+      <span>&copy; <span id="yr">2026</span> Olivia R. Alonso</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<dialog id="lightbox" aria-label="Enlarged image">
+  <button type="button" class="lb-close" aria-label="Close">&times;</button>
+  <button type="button" class="lb-prev" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+  <button type="button" class="lb-next" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  <img alt="">
+  <p class="lb-count" aria-live="polite"></p>
+</dialog>
+
+<script>
+/* ============================================================
+   HOW TO EDIT
+   - Case study text lives in "cases" below. Anything in [square
+     brackets] is a placeholder for you to replace.
+   - To add a picture: put the file in the "images" folder, then add
+     {src:"images/file.jpg", alt:"Describe it"} to that case's "work".
+     Multi-page pieces: {pages:["images/a.jpg","images/b.jpg"], alt:"..."}
+     Tall, narrow pieces you want shown whole: add whole:true
+     To choose which part shows in the thumbnail: add pos:"center 40%"
+     Very wide pieces (like billboards) show whole: add fit:"contain"
+   - {todo:true, label:"..."} shows a "Coming soon" frame; the label names the piece.
+   ============================================================ */
+const cases=[
+ {id:"arsa", short:["Advanced Reconstructive","Surgery Alliance"], name:"Advanced Reconstructive Surgery Alliance",
+  tags:"B2B · Recruitment · Event marketing",
+  card:"Physician recruitment marketing for the nation’s largest private reconstructive surgery network.",
+  title:"Scaling access to world-class reconstructive care",
+  lead:"Advanced Reconstructive Surgery Alliance (ARSA) unites leading reconstructive surgeons and practices in one national network to expand access to complex, specialized care. As Brand Strategist, I led the recruitment marketing that attracts the surgeons and practices needed to scale the alliance.",
+  role:[["My role", "Brand strategy and recruitment marketing across decks, digital, print, and events; post-onboarding practice marketing support; internal communications"], ["Timeline", "2023 – present"]],
+  challenge:"Advanced reconstructive surgery is out of reach for too many patients because the expertise is concentrated in too few places. To scale this care, ARSA had to convince top residents, fellows, academic surgeons, and private practices to join its physician-led alliance.",
+  insight:"Great surgeons don’t enter medicine to manage systems; they enter it to change lives. Recruitment works best when it speaks surgeon-to-surgeon, focusing on clinical collaboration, shared research, and expanded reach instead of business metrics. For doctors, about doctors, and steered by doctors.",
+  did:["Led recruitment marketing strategy for every audience, from residents to established practices.", "Turned the ARSA story into pitch decks, digital campaigns, and print collateral.", "Grew the annual Summit, ARSA’s flagship recruiting event, with hands-on cadaver labs and scientific symposia for national and international physicians.", "Led marketing for external recruitment events nationwide.", "Advised onboarded practices on marketing strategy and agency management.", "Managed the internal intranet for more than 1,000 employees across the network."],
+  results:[["81", "physicians joined since 2023"], ["15", "recruitment events led since 2023"], ["8", "practices joined since 2023"], ["2.5x", "Summit attendance multiplied since 2023 (130 to 320)"]],
+  work:[
+    {pages:["images/arsa-recruitment-pitch-deck-1.jpg","images/arsa-recruitment-pitch-deck-2.jpg","images/arsa-recruitment-pitch-deck-3.jpg","images/arsa-recruitment-pitch-deck-4.jpg"], label:"Recruitment pitch deck", alt:"ARSA recruitment pitch deck: the founding vision, the national footprint, the research and innovation engine, and patient outcomes"},
+    {src:"images/arsa-summit-save-the-date.jpg", label:"Summit save the date", alt:"Save the date for the 6th Annual ARSA Scientific Summit, April 29–30, 2027, at The Westin Jersey City Newport"},
+    {src:"images/arsa-resident-recruitment-email.jpg", label:"Resident recruitment email", alt:"ARSA recruitment email inviting graduating plastic surgery residents to explore the PrivaDemic practice model"},
+    {src:"images/arsa-conference-program-ad.jpg", label:"Conference program ad", alt:"ARSA conference program ad, Extraordinary Careers, Nationwide Opportunities, with partner practice logos"},
+    {src:"images/arsa-conference-exhibitor-booth.jpg", label:"Conference exhibitor booth", alt:"ARSA and The Institute for Advanced Reconstruction exhibitor booth at a medical conference, with a We’re Hiring panel and QR code"},
+    {pages:["images/arsa-practice-recruitment-one-pagers-1.jpg","images/arsa-practice-recruitment-one-pagers-2.jpg","images/arsa-practice-recruitment-one-pagers-3.jpg","images/arsa-practice-recruitment-one-pagers-4.jpg"], label:"Practice recruitment one-pagers", alt:"Front and back of two practice recruitment one-pagers for physician candidates: Center for Restorative Breast Surgery in New Orleans and Dallas, and National Center for Plastic Surgery in the Washington, DC region"},
+    {pages:["images/arsa-affiliate-program-brochure-1.jpg","images/arsa-affiliate-program-brochure-2.jpg"], label:"Affiliate Program brochure", alt:"ARSA Affiliate Program tri-fold brochure for reconstructive surgeons"},
+    {src:"images/arsa-happy-hour-sponsor-pull-up-banner.jpg", label:"Happy hour sponsor pull-up banner", alt:"ARSA Happy Hour sponsor pull-up banner, Raising the Bar on Plastic and Reconstructive Surgery"},
+    {pages:["images/arsa-partnership-press-release-1.jpg","images/arsa-partnership-press-release-2.jpg"], label:"Partnership press release", alt:"Press release: ARSA strengthens Texas presence with fourth partnership, adding Regional Plastic Surgery Center"},
+    {pages:["images/arsa-new-practice-welcome-deck-1.jpg","images/arsa-new-practice-welcome-deck-2.jpg","images/arsa-new-practice-welcome-deck-3.jpg","images/arsa-new-practice-welcome-deck-4.jpg"], label:"New practice welcome deck", alt:"ARSA welcome deck for newly joined practices: network overview, the PrivaDemic model, the alliance timeline, and the innovation pathway"},
+    {src:"images/arsa-employee-intranet-infographic.jpg", label:"Employee intranet infographic", alt:"ARSA Connect infographic introducing the network’s new employee intranet, its features, and how to sign in"}
+  ]},
+ {id:"regionelle", short:["Regionelle","Med Spa"], name:"Regionelle Med Spa",
+  tags:"B2C · Rebrand · Brand launch",
+  card:"Luxury rebrand and launch for Regional Plastic Surgery Center’s med spa in Dallas–Fort Worth, Texas.",
+  title:"Turning a clinical med spa into a luxury lifestyle brand",
+  lead:"Regionelle Med Spa is a luxury brand offering advanced medical aesthetics in Dallas–Fort Worth, backed by the surgical expertise of Regional Plastic Surgery Center (RPSC). As Account Executive, I spotted the opportunity to spin off RPSC’s med spa and gave it a standalone identity.",
+  role:[["My role", "Opportunity identification, brand research, naming, visual identity, and positioning; creative and strategic direction of agency partners"], ["Timeline", "2025"]],
+  challenge:"RPSC’s med spa operated under multiple, fragmented names, with no unified identity to anchor its market position or elevate the client experience.",
+  insight:"Market research revealed room for an independent luxury lifestyle brand: feminine, aspirational, and distinct from the surgical practice, while still drawing on its clinical reputation.",
+  did:["Developed three creative directions, each with its own visual identity, manifesto, hero messaging, and positioning.", "Established Regionelle Med Spa as the practice’s feminine sister brand.", "Directed agency partners on the website and the CRM tools for exclusive patient events.", "Managed the cross-functional rollout, including an upcoming space expansion and targeted paid media."],
+  results:[["3", "creative directions delivered"], ["1", "sister brand landed and trademarked"], ["Live", "website and CRM event campaigns launched"], ["New", "physical space and digital infrastructure built for scale"]],
+  work:[
+    {pages:["images/regionelle-creative-direction-pitch-deck-1.jpg","images/regionelle-creative-direction-pitch-deck-2.jpg","images/regionelle-creative-direction-pitch-deck-3.jpg","images/regionelle-creative-direction-pitch-deck-4.jpg"], label:"Creative direction pitch deck", alt:"Medical spa rebrand deck: an overview of the three creative directions, then the Regional Refined, Retreat by Regional, and Regionelle Med Spa logos"},
+    {src:"images/regionelle-logo-and-color-palette.jpg", label:"Logo and color palette", alt:"Regionelle Med Spa logo on deep teal with the tagline The art of becoming and a four-color palette: gold, deep teal, evergreen, and ivory"},
+    {src:"images/regionelle-brand-guidelines.jpg", label:"Brand guidelines", alt:"Regionelle Med Spa brand guidelines with logo, color palette, typography, hero message, and moodboard"},
+    {src:"images/regionelle-launch-website.jpg", label:"Launch website", alt:"Regionelle Med Spa website homepage: Advanced Medical Aesthetics, Guided by Surgical Expertise"},
+    {todo:true, label:"New treatment space"}
+  ]},
+ {id:"bcnj", short:["The Breast Center","of New Jersey"], name:"The Breast Center of New Jersey",
+  tags:"B2C · Brand creation · Awareness campaigns",
+  card:"Brand launch and awareness marketing for a new, coordinated breast care center in New Jersey.",
+  title:"Launching one coordinated home for breast care",
+  lead:"The Breast Center of New Jersey (BCNJ) brings the full spectrum of breast care—from genetic testing, screening, and cancer surgery to advanced reconstruction and post-cancer treatment conditions—together in one network. As Account Executive, I led the brand launch and multi-channel campaign that established BCNJ as the Garden State’s premier destination for breast care.",
+  role:[["My role", "Brand identity and naming; agency direction for website development; omni-channel launch marketing including billboards, digital advertising, print collateral, employee apparel, statewide event activations, and patient education booklet copy"], ["Timeline", "2024 – 2025"]],
+  challenge:"Patients navigating breast care in New Jersey often faced administrative fragmentation, bouncing between separate providers for diagnosis, treatment, reconstruction, and follow-up care. BCNJ needed a clear identity and market presence to establish authority, ensure continuity of care under one roof, and build immediate trust with patients.",
+  insight:"Partner practices Premier Surgical Network and The Institute for Advanced Reconstruction already offered everything from screening and cancer removal to complex microsurgery and lymphedema care, but patients didn’t know it was all in one place. Uniting these specialists under one brand let us tell a clear story: one destination where patients stay with the same trusted team from diagnosis through full recovery.",
+  did:["Collaborated on brainstorming, naming, and visual identity to position BCNJ as a unified destination for breast health.", "Directed agency partners on the website and targeted digital assets.", "Designed and coordinated a North Jersey billboard campaign, magazine ads, and print collateral.", "Launched the brand at 37 statewide events in 2024 and 2025, from Ocean City to MetLife Stadium.", "Wrote a 60-page patient education booklet and produced event swag, pull-up banners, and team apparel."],
+  results:[["360°", "omni-channel rollout delivered across digital, print, and events"], ["60", "page patient education booklet written"], ["37", "launch events executed across New Jersey"], ["1", "North Jersey billboard campaign launched"]],
+  work:[
+    {src:"images/bcnj-launch-website.jpg", label:"Launch website", alt:"The Breast Center of New Jersey website homepage, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
+    {src:"images/bcnj-billboard.jpg", label:"Billboard", alt:"Breast Center of New Jersey billboard, Breast Reduction Surgery Covered by Insurance"},
+    {src:"images/bcnj-magazine-ad.jpg", label:"Magazine ad", alt:"Breast Center of New Jersey magazine ad, Leading Experts in Comprehensive Breast Cancer Care"},
+    {src:"images/bcnj-services-rack-card.jpg", label:"Services rack card", alt:"Breast Center of New Jersey rack card, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
+    {src:"images/bcnj-self-exam-shower-hanger.jpg", pos:"center 38%", label:"Self-exam shower hanger", alt:"Breast Center of New Jersey shower hanger, Early Detection Is Key"},
+    {todo:true, label:"Community event booth"},
+    {pages:["images/bcnj-patient-education-booklet-1.jpg","images/bcnj-patient-education-booklet-2.jpg","images/bcnj-patient-education-booklet-3.jpg","images/bcnj-patient-education-booklet-4.jpg"], label:"Patient education booklet (copywriting)", alt:"Pages from the Breast Center of New Jersey 60-page patient education booklet: welcome letter, the patient journey, genetic testing, and improving life after treatment"}
+  ]}
+];
+
+/* Additional work shown in the "More work" grid. cat = Advertising, Digital or Print */
+const more=[
+  {cat:"Digital", src:"images/medical-billing-course-display-ad.jpg", alt:"Medical Billing Opportunity ad: Learn How to Make Money in Medical Billing in 6–8 Weeks", label:"Medical billing course display ad"},
+  {cat:"Print", src:"images/dermatology-brand-launch-pull-up-banner.jpg", alt:"Advanced Dermatology Network pull-up banner", label:"Dermatology brand launch pull-up banner"},
+  {cat:"Digital", src:"images/times-square-billboard-announcement-email.jpg", alt:"The Institute for Advanced Reconstruction email, We’ve Made It, Times Square", label:"Times Square billboard announcement email"},
+  {cat:"Print", label:"Gender-affirming surgeon recruitment brochure"},
+  {cat:"Digital", src:"images/med-spa-promotion-social-post.jpg", alt:"IT Aesthetix social post: Lips and Folds Promo, save up to $100 on filler", label:"Med spa promotion social post"},
+  {cat:"Print", src:"images/skinpen-treatment-card.jpg", alt:"SkinPen micro-needling patient card", label:"SkinPen treatment card"},
+  {cat:"Digital", pages:["images/hospital-partnership-pitch-deck-1.jpg","images/hospital-partnership-pitch-deck-2.jpg","images/hospital-partnership-pitch-deck-3.jpg","images/hospital-partnership-pitch-deck-4.jpg"], alt:"Project Landmark hospital partnership deck", label:"Hospital partnership pitch deck"},
+  {cat:"Print", src:"images/pain-management-pull-up-banner.jpg", alt:"Seckin Pain Management pull-up banner", label:"Pain management pull-up banner"},
+  {cat:"Digital", src:"images/facility-opening-announcement-email.jpg", alt:"Announcement email, Redefining Specialty Surgery, for a new 14,500-square-foot facility in Red Bank, New Jersey", label:"Facility opening announcement email"},
+  {cat:"Print", pages:["images/abdominal-wall-reconstruction-brochure-1.jpg","images/abdominal-wall-reconstruction-brochure-2.jpg"], alt:"The Institute for Advanced Reconstruction tri-fold patient brochure: Abdominal Wall Reconstruction and Complex Hernia Care", label:"Abdominal wall reconstruction brochure"},
+  {cat:"Digital", src:"images/surgeon-spotlight-social-ad.jpg", alt:"Social ad for Dr. Joshua Lemmon: DFW’s Largest DIEP Flap Practice, with a D Magazine Best Doctor callout", label:"Surgeon spotlight social ad"},
+  {cat:"Print", src:"images/lymphedema-referral-card.jpg", alt:"Information card for Dr. Joseph Dayan’s lymphedema treatment in Florida, The Institute for Advanced Reconstruction", label:"Lymphedema referral card"}
+];
+
+document.documentElement.classList.add("js");
+const pad=n=>String(n).padStart(2,"0");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const back='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
+const imgIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-9 9"/></svg>';
+const isTodo=t=>/\[.*\]/.test(t);
+const t=s=>isTodo(s)?`<span class="todo">${esc(s)}</span>`:esc(s);
+
+const frame=(i,fallback)=>{
+  const pages=i.pages||(i.src?[i.src]:null);
+  if(!pages) return `<div class="frame"><div class="ph">${imgIcon}<span>Coming soon</span></div></div>`;
+  return `<button type="button" class="frame${i.whole?" whole":""}${i.pos?" pos":""}" data-pages="${esc(JSON.stringify(pages))}" aria-label="Enlarge: ${esc(i.alt||fallback)}${pages.length>1?` (${pages.length} pages)`:""}"><img src="${esc(pages[0])}" alt="${esc(i.alt||fallback)}" loading="lazy"${i.pos?` style="object-position:${esc(i.pos)}"`:""}${i.fit?` data-fit="${esc(i.fit)}"`:""}></button>`;
+};
+
+/* Case study cards + sections */
+const idx=document.getElementById("index"), main=document.getElementById("sections");
+cases.forEach((c,ci)=>{
+  const n=`${pad(ci+1)} / ${pad(cases.length)}`;
+  idx.insertAdjacentHTML("beforeend",`<div class="icard reveal"><div class="top"><span class="num">${n}</span><h3>${c.short.map(l=>`<span>${esc(l)}</span>`).join("")}</h3></div>
+    <p class="sum">${esc(c.card)}</p><p class="tags">${esc(c.tags)}</p>
+    <a class="go" href="#${c.id}">Read the case study ${arrow}</a></div>`);
+  const slides=c.work.map(i=>`<figure class="slide">${frame({...i,whole:false},i.label||c.name)}${i.label?`<figcaption>${esc(i.label)}</figcaption>`:""}</figure>`).join("");
+  main.insertAdjacentHTML("beforeend",`<div class="group lines" id="${c.id}"><div class="wrap"><h2>${esc(c.name)}</h2><span class="eyebrow">Case study ${n}</span></div></div>
+  <article class="case wrap" aria-labelledby="${c.id}-t">
+    <div class="case-top">
+      <div class="case-left reveal">
+        <h3 id="${c.id}-t">${esc(c.title)}</h3>
+        <p class="lead">${esc(c.lead)}</p>
+        <dl class="role">${c.role.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${t(v)}</dd></div>`).join("")}</dl>
+        <div class="results" aria-label="Results">${c.results.map(([v,l])=>`<div><b>${t(v)}</b><span>${t(l)}</span></div>`).join("")}</div>
+      </div>
+      <div class="story reveal">
+        <div><span class="n">01</span><h4>The challenge</h4><p>${esc(c.challenge)}</p></div>
+        <div><span class="n">02</span><h4>The insight</h4><p>${esc(c.insight)}</p></div>
+        <div><span class="n">03</span><h4>The approach</h4><ul>${c.did.map(d=>`<li>${esc(d)}</li>`).join("")}</ul></div>
+      </div>
+    </div>
+    <section class="work reveal" aria-label="${esc(c.name)} work">
+      <div class="head"><p class="eyebrow">The work</p>
+      <div class="arrows"><button type="button" aria-label="Previous ${esc(c.name)} piece" data-d="-1">${back}</button><button type="button" aria-label="Next ${esc(c.name)} piece" data-d="1">${arrow}</button></div></div>
+      <div class="track" tabindex="0" role="region" aria-label="${esc(c.name)} gallery">${slides}</div>
+      <div class="progress" aria-hidden="true"><i></i></div>
+    </section>
+  </article>`);
+});
+
+/* More work grid + filters */
+const grid=document.getElementById("more-grid");
+/* Order used when the Digital or Print filter is on (the All view keeps the list order above) */
+const filterOrder={
+  Digital:["Medical billing course display ad","Times Square billboard announcement email","Med spa promotion social post","Hospital partnership pitch deck","Facility opening announcement email","Surgeon spotlight social ad"],
+  Print:["Dermatology brand launch pull-up banner","Gender-affirming surgeon recruitment brochure","SkinPen treatment card","Pain management pull-up banner","Abdominal wall reconstruction brochure","Lymphedema referral card"]
+};
+grid.innerHTML=more.map(i=>`<figure class="slide reveal" data-cat="${i.cat}" data-label="${esc(i.label)}">${frame({...i,whole:false},i.label)}<figcaption>${esc(i.label)}</figcaption></figure>`).join("");
+/* Every piece fills its card, anchored top-left so headlines stay visible */
+document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  const f=b.dataset.f, ord=filterOrder[f];
+  grid.querySelectorAll(".slide").forEach(sl=>{
+    sl.hidden=!(f==="all"||sl.dataset.cat===f);
+    sl.style.order=ord?String(ord.indexOf(sl.dataset.label)):"";
+  });
+}));
+
+/* Portrait pieces show their top in the gallery; very tall ones (like full emails) scroll when enlarged */
+document.querySelectorAll("button.frame:not(.whole) img").forEach(img=>{
+  const mark=()=>{const r=img.naturalHeight/img.naturalWidth;
+    if(r>1.15) img.parentElement.classList.add("tall");
+    if(r>1.6) img.parentElement.dataset.scroll="1"};
+  img.complete?mark():img.addEventListener("load",mark);
+});
+
+/* Carousels */
+document.querySelectorAll(".work").forEach(sec=>{
+  const t=sec.querySelector(".track"), [b0,b1]=sec.querySelectorAll(".arrows button"), bar=sec.querySelector(".progress i");
+  const step=()=>t.querySelector(".slide").getBoundingClientRect().width+24;
+  const upd=()=>{
+    const max=t.scrollWidth-t.clientWidth;
+    b0.disabled=t.scrollLeft<4; b1.disabled=t.scrollLeft>=max-4;
+    const w=Math.min(1,t.clientWidth/t.scrollWidth);
+    bar.style.width=(w*100)+"%";
+    bar.style.transform=`translateX(${max>0?(t.scrollLeft/max)*((1-w)/w)*100:0}%)`;
+  };
+  [b0,b1].forEach(b=>b.addEventListener("click",()=>{const w=step(); t.scrollTo({left:Math.max(0,(Math.round(t.scrollLeft/w)+Number(b.dataset.d))*w),behavior:"smooth"})}));
+  t.addEventListener("scroll",upd,{passive:true}); addEventListener("resize",upd); addEventListener("load",upd); upd();
+  if(window.ResizeObserver) new ResizeObserver(upd).observe(t);
+  /* Click-and-drag to scroll with a mouse; a drag never opens the lightbox */
+  let down=null, moved=false;
+  t.addEventListener("pointerdown",e=>{if(e.pointerType!=="mouse"||e.button!==0) return; down={x:e.clientX,left:t.scrollLeft}; moved=false});
+  addEventListener("pointermove",e=>{if(!down) return; const dx=e.clientX-down.x;
+    if(!moved&&Math.abs(dx)>6){moved=true; t.classList.add("dragging")}
+    if(moved){t.scrollLeft=down.left-dx; e.preventDefault()}});
+  addEventListener("pointerup",()=>{if(!down) return; down=null;
+    if(moved){t.classList.remove("dragging"); const w=step(); t.scrollTo({left:Math.round(t.scrollLeft/w)*w,behavior:"smooth"})}});
+  t.addEventListener("click",e=>{if(moved){e.preventDefault(); e.stopPropagation(); moved=false}},true);
+  t.addEventListener("dragstart",e=>e.preventDefault());
+});
+
+/* Lightbox */
+const lb=document.getElementById("lightbox"), lbImg=lb.querySelector("img"), lbCount=lb.querySelector(".lb-count"),
+      lbPrev=lb.querySelector(".lb-prev"), lbNext=lb.querySelector(".lb-next");
+let lbPages=[], lbAt=0;
+const lbShow=n=>{
+  lbAt=Math.max(0,Math.min(lbPages.length-1,n));
+  lbImg.src=lbPages[lbAt]; lb.scrollTop=0;
+  const multi=lbPages.length>1;
+  lbCount.textContent=multi?`${lbAt+1} / ${lbPages.length}`:"";
+  lbPrev.hidden=!multi||lbAt===0; lbNext.hidden=!multi||lbAt===lbPages.length-1;
+};
+document.addEventListener("click",e=>{
+  const f=e.target.closest("button.frame"); if(!f) return;
+  lbPages=JSON.parse(f.dataset.pages); lbImg.alt=f.querySelector("img").alt;
+  lb.classList.toggle("tall",f.dataset.scroll==="1"); lb.showModal(); lbShow(0);
+});
+lbPrev.addEventListener("click",()=>lbShow(lbAt-1));
+lbNext.addEventListener("click",()=>lbShow(lbAt+1));
+lb.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")lbShow(lbAt-1); if(e.key==="ArrowRight")lbShow(lbAt+1)});
+lb.querySelector(".lb-close").addEventListener("click",()=>lb.close());
+lb.addEventListener("click",e=>{if(e.target===lb)lb.close()});
+
+/* Nav background after the hero */
+const nav=document.getElementById("nav"), hero=document.querySelector(".hero");
+new IntersectionObserver(([e])=>nav.classList.toggle("solid",!e.isIntersecting),{rootMargin:"-72px 0px 0px 0px"}).observe(hero);
+
+/* Scroll reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+/* Size the name so it spans exactly the width of the tagline beneath it */
+function fitName(){
+  const h=document.querySelector(".hero h1"), t=document.querySelector(".hero .tag");
+  h.style.fontSize="";
+  const w=el=>{const r=document.createRange();r.selectNodeContents(el);return r.getBoundingClientRect().width};
+  const target=Math.min(w(t), h.parentElement.clientWidth);
+  const fs=parseFloat(getComputedStyle(h).fontSize), cur=w(h);
+  if(cur>0&&target>0) h.style.fontSize=(fs*target/cur)+"px";
+}
+fitName();
+if(document.fonts) document.fonts.ready.then(fitName);
+addEventListener("resize",fitName);
+
+/* Keep every card title on exactly two lines and every tag row on one line,
+   using one shared size so all three cards match */
+function fitCards(){
+  const textW=el=>{const r=document.createRange();r.selectNodeContents(el);return r.getBoundingClientRect().width};
+  const inner=el=>{const cs=getComputedStyle(el);return el.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight)};
+  const fit=(targets,minScale)=>{
+    targets.forEach(t=>t.el.style.fontSize="");
+    if(!targets.length) return;
+    const base=parseFloat(getComputedStyle(targets[0].el).fontSize);
+    let scale=1;
+    targets.forEach(t=>{const w=Math.max(...t.lines().map(textW)), room=inner(t.box); if(w>room) scale=Math.min(scale,room/w)});
+    const size=base*Math.max(minScale,scale*.98);
+    targets.forEach(t=>t.el.style.fontSize=size+"px");
+  };
+  const cards=[...document.querySelectorAll(".icard")];
+  fit(cards.map(c=>{const h=c.querySelector("h3");return {el:h,box:c.querySelector(".top"),lines:()=>[...h.children]}}),.6);
+  if(innerWidth>1100) fit(cards.map(c=>{const t=c.querySelector(".tags");return {el:t,box:t,lines:()=>[t]}}),.7);
+}
+fitCards();
+if(document.fonts) document.fonts.ready.then(fitCards);
+addEventListener("resize",fitCards);
+
+/* Case study stats fill the space beside the story box: one column when there is room, two otherwise */
+function fitStats(){
+  document.querySelectorAll(".case-top").forEach(ct=>{
+    const L=ct.querySelector(".case-left"), S=ct.querySelector(".story"), R=ct.querySelector(".results");
+    R.classList.remove("stack");
+    if(getComputedStyle(ct).gridTemplateColumns.split(" ").length<2) return;
+    const room=S.offsetHeight-(R.getBoundingClientRect().top-L.getBoundingClientRect().top);
+    if(room>=R.children.length*125) R.classList.add("stack");
+  });
+}
+fitStats();
+if(document.fonts) document.fonts.ready.then(fitStats);
+addEventListener("resize",fitStats);
+</script>
+</body>
+</html>
