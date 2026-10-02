@@ -310,8 +310,8 @@ dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
   <div class="about-grid">
     <div class="card-sand reveal">
       <p class="eyebrow">About</p>
-      <!-- Headshot: swap images/olivia-alonso.jpg to change the photo -->
-      <div class="portrait"><img src="images/olivia-alonso.jpg" alt="Olivia R. Alonso" width="900" height="1599"></div>
+      <!-- Headshot: swap olivia-alonso.jpg to change the photo -->
+      <div class="portrait"><img src="olivia-alonso.jpg" alt="Olivia R. Alonso" width="900" height="1599"></div>
       <h2><span>First I plan the brand,</span> <span>then I bring it to life.</span></h2>
       <p class="lead strong">Most strategists hand off the strategy.<br>I build the campaign that follows it.</p>
       <p class="lead">When the person who sets the strategy also makes the creative, nothing gets lost in translation. Every piece stays on message, and ideas move from plan to market faster.</p>
@@ -382,9 +382,9 @@ dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
    HOW TO EDIT
    - Case study text lives in "cases" below. Anything in [square
      brackets] is a placeholder for you to replace.
-   - To add a picture: put the file in the "images" folder, then add
-     {src:"images/file.jpg", alt:"Describe it"} to that case's "work".
-     Multi-page pieces: {pages:["images/a.jpg","images/b.jpg"], alt:"..."}
+   - To add a picture: upload the file next to index.html, then add
+     {src:"file.jpg", alt:"Describe it"} to that case's "work".
+     Multi-page pieces: {pages:["a.jpg","b.jpg"], alt:"..."}
      Tall, narrow pieces you want shown whole: add whole:true
      To choose which part shows in the thumbnail: add pos:"center 40%"
      Very wide pieces (like billboards) show whole: add fit:"contain"
@@ -402,17 +402,17 @@ const cases=[
   did:["Led recruitment marketing strategy for every audience, from residents to established practices.", "Turned the ARSA story into pitch decks, digital campaigns, and print collateral.", "Grew the annual Summit, ARSA’s flagship recruiting event, with hands-on cadaver labs and scientific symposia for national and international physicians.", "Led marketing for external recruitment events nationwide.", "Advised onboarded practices on marketing strategy and agency management.", "Managed the internal intranet for more than 1,000 employees across the network."],
   results:[["81", "physicians joined since 2023"], ["15", "recruitment events led since 2023"], ["8", "practices joined since 2023"], ["2.5x", "Summit attendance multiplied since 2023 (130 to 320)"]],
   work:[
-    {pages:["images/arsa-recruitment-pitch-deck-1.jpg","images/arsa-recruitment-pitch-deck-2.jpg","images/arsa-recruitment-pitch-deck-3.jpg","images/arsa-recruitment-pitch-deck-4.jpg"], label:"Recruitment pitch deck", alt:"ARSA recruitment pitch deck: the founding vision, the national footprint, the research and innovation engine, and patient outcomes"},
-    {src:"images/arsa-summit-save-the-date.jpg", label:"Summit save the date", alt:"Save the date for the 6th Annual ARSA Scientific Summit, April 29–30, 2027, at The Westin Jersey City Newport"},
-    {src:"images/arsa-resident-recruitment-email.jpg", label:"Resident recruitment email", alt:"ARSA recruitment email inviting graduating plastic surgery residents to explore the PrivaDemic practice model"},
-    {src:"images/arsa-conference-program-ad.jpg", label:"Conference program ad", alt:"ARSA conference program ad, Extraordinary Careers, Nationwide Opportunities, with partner practice logos"},
-    {src:"images/arsa-conference-exhibitor-booth.jpg", label:"Conference exhibitor booth", alt:"ARSA and The Institute for Advanced Reconstruction exhibitor booth at a medical conference, with a We’re Hiring panel and QR code"},
-    {pages:["images/arsa-practice-recruitment-one-pagers-1.jpg","images/arsa-practice-recruitment-one-pagers-2.jpg","images/arsa-practice-recruitment-one-pagers-3.jpg","images/arsa-practice-recruitment-one-pagers-4.jpg"], label:"Practice recruitment one-pagers", alt:"Front and back of two practice recruitment one-pagers for physician candidates: Center for Restorative Breast Surgery in New Orleans and Dallas, and National Center for Plastic Surgery in the Washington, DC region"},
-    {pages:["images/arsa-affiliate-program-brochure-1.jpg","images/arsa-affiliate-program-brochure-2.jpg"], label:"Affiliate Program brochure", alt:"ARSA Affiliate Program tri-fold brochure for reconstructive surgeons"},
-    {src:"images/arsa-happy-hour-sponsor-pull-up-banner.jpg", label:"Happy hour sponsor pull-up banner", alt:"ARSA Happy Hour sponsor pull-up banner, Raising the Bar on Plastic and Reconstructive Surgery"},
-    {pages:["images/arsa-partnership-press-release-1.jpg","images/arsa-partnership-press-release-2.jpg"], label:"Partnership press release", alt:"Press release: ARSA strengthens Texas presence with fourth partnership, adding Regional Plastic Surgery Center"},
-    {pages:["images/arsa-new-practice-welcome-deck-1.jpg","images/arsa-new-practice-welcome-deck-2.jpg","images/arsa-new-practice-welcome-deck-3.jpg","images/arsa-new-practice-welcome-deck-4.jpg"], label:"New practice welcome deck", alt:"ARSA welcome deck for newly joined practices: network overview, the PrivaDemic model, the alliance timeline, and the innovation pathway"},
-    {src:"images/arsa-employee-intranet-infographic.jpg", label:"Employee intranet infographic", alt:"ARSA Connect infographic introducing the network’s new employee intranet, its features, and how to sign in"}
+    {pages:["arsa-recruitment-pitch-deck-1.jpg","arsa-recruitment-pitch-deck-2.jpg","arsa-recruitment-pitch-deck-3.jpg","arsa-recruitment-pitch-deck-4.jpg"], label:"Recruitment pitch deck", alt:"ARSA recruitment pitch deck: the founding vision, the national footprint, the research and innovation engine, and patient outcomes"},
+    {src:"arsa-summit-save-the-date.jpg", label:"Summit save the date", alt:"Save the date for the 6th Annual ARSA Scientific Summit, April 29–30, 2027, at The Westin Jersey City Newport"},
+    {src:"arsa-resident-recruitment-email.jpg", label:"Resident recruitment email", alt:"ARSA recruitment email inviting graduating plastic surgery residents to explore the PrivaDemic practice model"},
+    {src:"arsa-conference-program-ad.jpg", label:"Conference program ad", alt:"ARSA conference program ad, Extraordinary Careers, Nationwide Opportunities, with partner practice logos"},
+    {src:"arsa-conference-exhibitor-booth.jpg", label:"Conference exhibitor booth", alt:"ARSA and The Institute for Advanced Reconstruction exhibitor booth at a medical conference, with a We’re Hiring panel and QR code"},
+    {pages:["arsa-practice-recruitment-one-pagers-1.jpg","arsa-practice-recruitment-one-pagers-2.jpg","arsa-practice-recruitment-one-pagers-3.jpg","arsa-practice-recruitment-one-pagers-4.jpg"], label:"Practice recruitment one-pagers", alt:"Front and back of two practice recruitment one-pagers for physician candidates: Center for Restorative Breast Surgery in New Orleans and Dallas, and National Center for Plastic Surgery in the Washington, DC region"},
+    {pages:["arsa-affiliate-program-brochure-1.jpg","arsa-affiliate-program-brochure-2.jpg"], label:"Affiliate Program brochure", alt:"ARSA Affiliate Program tri-fold brochure for reconstructive surgeons"},
+    {src:"arsa-happy-hour-sponsor-pull-up-banner.jpg", label:"Happy hour sponsor pull-up banner", alt:"ARSA Happy Hour sponsor pull-up banner, Raising the Bar on Plastic and Reconstructive Surgery"},
+    {pages:["arsa-partnership-press-release-1.jpg","arsa-partnership-press-release-2.jpg"], label:"Partnership press release", alt:"Press release: ARSA strengthens Texas presence with fourth partnership, adding Regional Plastic Surgery Center"},
+    {pages:["arsa-new-practice-welcome-deck-1.jpg","arsa-new-practice-welcome-deck-2.jpg","arsa-new-practice-welcome-deck-3.jpg","arsa-new-practice-welcome-deck-4.jpg"], label:"New practice welcome deck", alt:"ARSA welcome deck for newly joined practices: network overview, the PrivaDemic model, the alliance timeline, and the innovation pathway"},
+    {src:"arsa-employee-intranet-infographic.jpg", label:"Employee intranet infographic", alt:"ARSA Connect infographic introducing the network’s new employee intranet, its features, and how to sign in"}
   ]},
  {id:"regionelle", short:["Regionelle","Med Spa"], name:"Regionelle Med Spa",
   tags:"B2C · Rebrand · Brand launch",
@@ -425,10 +425,10 @@ const cases=[
   did:["Developed three creative directions, each with its own visual identity, manifesto, hero messaging, and positioning.", "Established Regionelle Med Spa as the practice’s feminine sister brand.", "Directed agency partners on the website and the CRM tools for exclusive patient events.", "Managed the cross-functional rollout, including an upcoming space expansion and targeted paid media."],
   results:[["3", "creative directions delivered"], ["1", "sister brand landed and trademarked"], ["Live", "website and CRM event campaigns launched"], ["New", "physical space and digital infrastructure built for scale"]],
   work:[
-    {pages:["images/regionelle-creative-direction-pitch-deck-1.jpg","images/regionelle-creative-direction-pitch-deck-2.jpg","images/regionelle-creative-direction-pitch-deck-3.jpg","images/regionelle-creative-direction-pitch-deck-4.jpg"], label:"Creative direction pitch deck", alt:"Medical spa rebrand deck: an overview of the three creative directions, then the Regional Refined, Retreat by Regional, and Regionelle Med Spa logos"},
-    {src:"images/regionelle-logo-and-color-palette.jpg", label:"Logo and color palette", alt:"Regionelle Med Spa logo on deep teal with the tagline The art of becoming and a four-color palette: gold, deep teal, evergreen, and ivory"},
-    {src:"images/regionelle-brand-guidelines.jpg", label:"Brand guidelines", alt:"Regionelle Med Spa brand guidelines with logo, color palette, typography, hero message, and moodboard"},
-    {src:"images/regionelle-launch-website.jpg", label:"Launch website", alt:"Regionelle Med Spa website homepage: Advanced Medical Aesthetics, Guided by Surgical Expertise"},
+    {pages:["regionelle-creative-direction-pitch-deck-1.jpg","regionelle-creative-direction-pitch-deck-2.jpg","regionelle-creative-direction-pitch-deck-3.jpg","regionelle-creative-direction-pitch-deck-4.jpg"], label:"Creative direction pitch deck", alt:"Medical spa rebrand deck: an overview of the three creative directions, then the Regional Refined, Retreat by Regional, and Regionelle Med Spa logos"},
+    {src:"regionelle-logo-and-color-palette.jpg", label:"Logo and color palette", alt:"Regionelle Med Spa logo on deep teal with the tagline The art of becoming and a four-color palette: gold, deep teal, evergreen, and ivory"},
+    {src:"regionelle-brand-guidelines.jpg", label:"Brand guidelines", alt:"Regionelle Med Spa brand guidelines with logo, color palette, typography, hero message, and moodboard"},
+    {src:"regionelle-launch-website.jpg", label:"Launch website", alt:"Regionelle Med Spa website homepage: Advanced Medical Aesthetics, Guided by Surgical Expertise"},
     {todo:true, label:"New treatment space"}
   ]},
  {id:"bcnj", short:["The Breast Center","of New Jersey"], name:"The Breast Center of New Jersey",
@@ -442,30 +442,30 @@ const cases=[
   did:["Collaborated on brainstorming, naming, and visual identity to position BCNJ as a unified destination for breast health.", "Directed agency partners on the website and targeted digital assets.", "Designed and coordinated a North Jersey billboard campaign, magazine ads, and print collateral.", "Launched the brand at 37 statewide events in 2024 and 2025, from Ocean City to MetLife Stadium.", "Wrote a 60-page patient education booklet and produced event swag, pull-up banners, and team apparel."],
   results:[["360°", "omni-channel rollout delivered across digital, print, and events"], ["60", "page patient education booklet written"], ["37", "launch events executed across New Jersey"], ["1", "North Jersey billboard campaign launched"]],
   work:[
-    {src:"images/bcnj-launch-website.jpg", label:"Launch website", alt:"The Breast Center of New Jersey website homepage, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
-    {src:"images/bcnj-billboard.jpg", label:"Billboard", alt:"Breast Center of New Jersey billboard, Breast Reduction Surgery Covered by Insurance"},
-    {src:"images/bcnj-magazine-ad.jpg", label:"Magazine ad", alt:"Breast Center of New Jersey magazine ad, Leading Experts in Comprehensive Breast Cancer Care"},
-    {src:"images/bcnj-services-rack-card.jpg", label:"Services rack card", alt:"Breast Center of New Jersey rack card, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
-    {src:"images/bcnj-self-exam-shower-hanger.jpg", pos:"center 38%", label:"Self-exam shower hanger", alt:"Breast Center of New Jersey shower hanger, Early Detection Is Key"},
+    {src:"bcnj-launch-website.jpg", label:"Launch website", alt:"The Breast Center of New Jersey website homepage, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
+    {src:"bcnj-billboard.jpg", label:"Billboard", alt:"Breast Center of New Jersey billboard, Breast Reduction Surgery Covered by Insurance"},
+    {src:"bcnj-magazine-ad.jpg", label:"Magazine ad", alt:"Breast Center of New Jersey magazine ad, Leading Experts in Comprehensive Breast Cancer Care"},
+    {src:"bcnj-services-rack-card.jpg", label:"Services rack card", alt:"Breast Center of New Jersey rack card, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
+    {src:"bcnj-self-exam-shower-hanger.jpg", pos:"center 38%", label:"Self-exam shower hanger", alt:"Breast Center of New Jersey shower hanger, Early Detection Is Key"},
     {todo:true, label:"Community event booth"},
-    {pages:["images/bcnj-patient-education-booklet-1.jpg","images/bcnj-patient-education-booklet-2.jpg","images/bcnj-patient-education-booklet-3.jpg","images/bcnj-patient-education-booklet-4.jpg"], label:"Patient education booklet (copywriting)", alt:"Pages from the Breast Center of New Jersey 60-page patient education booklet: welcome letter, the patient journey, genetic testing, and improving life after treatment"}
+    {pages:["bcnj-patient-education-booklet-1.jpg","bcnj-patient-education-booklet-2.jpg","bcnj-patient-education-booklet-3.jpg","bcnj-patient-education-booklet-4.jpg"], label:"Patient education booklet (copywriting)", alt:"Pages from the Breast Center of New Jersey 60-page patient education booklet: welcome letter, the patient journey, genetic testing, and improving life after treatment"}
   ]}
 ];
 
 /* Additional work shown in the "More work" grid. cat = Advertising, Digital or Print */
 const more=[
-  {cat:"Digital", src:"images/medical-billing-course-display-ad.jpg", alt:"Medical Billing Opportunity ad: Learn How to Make Money in Medical Billing in 6–8 Weeks", label:"Medical billing course display ad"},
-  {cat:"Print", src:"images/dermatology-brand-launch-pull-up-banner.jpg", alt:"Advanced Dermatology Network pull-up banner", label:"Dermatology brand launch pull-up banner"},
-  {cat:"Digital", src:"images/times-square-billboard-announcement-email.jpg", alt:"The Institute for Advanced Reconstruction email, We’ve Made It, Times Square", label:"Times Square billboard announcement email"},
+  {cat:"Digital", src:"medical-billing-course-display-ad.jpg", alt:"Medical Billing Opportunity ad: Learn How to Make Money in Medical Billing in 6–8 Weeks", label:"Medical billing course display ad"},
+  {cat:"Print", src:"dermatology-brand-launch-pull-up-banner.jpg", alt:"Advanced Dermatology Network pull-up banner", label:"Dermatology brand launch pull-up banner"},
+  {cat:"Digital", src:"times-square-billboard-announcement-email.jpg", alt:"The Institute for Advanced Reconstruction email, We’ve Made It, Times Square", label:"Times Square billboard announcement email"},
   {cat:"Print", label:"Gender-affirming surgeon recruitment brochure"},
-  {cat:"Digital", src:"images/med-spa-promotion-social-post.jpg", alt:"IT Aesthetix social post: Lips and Folds Promo, save up to $100 on filler", label:"Med spa promotion social post"},
-  {cat:"Print", src:"images/skinpen-treatment-card.jpg", alt:"SkinPen micro-needling patient card", label:"SkinPen treatment card"},
-  {cat:"Digital", pages:["images/hospital-partnership-pitch-deck-1.jpg","images/hospital-partnership-pitch-deck-2.jpg","images/hospital-partnership-pitch-deck-3.jpg","images/hospital-partnership-pitch-deck-4.jpg"], alt:"Project Landmark hospital partnership deck", label:"Hospital partnership pitch deck"},
-  {cat:"Print", src:"images/pain-management-pull-up-banner.jpg", alt:"Seckin Pain Management pull-up banner", label:"Pain management pull-up banner"},
-  {cat:"Digital", src:"images/facility-opening-announcement-email.jpg", alt:"Announcement email, Redefining Specialty Surgery, for a new 14,500-square-foot facility in Red Bank, New Jersey", label:"Facility opening announcement email"},
-  {cat:"Print", pages:["images/abdominal-wall-reconstruction-brochure-1.jpg","images/abdominal-wall-reconstruction-brochure-2.jpg"], alt:"The Institute for Advanced Reconstruction tri-fold patient brochure: Abdominal Wall Reconstruction and Complex Hernia Care", label:"Abdominal wall reconstruction brochure"},
-  {cat:"Digital", src:"images/surgeon-spotlight-social-ad.jpg", alt:"Social ad for Dr. Joshua Lemmon: DFW’s Largest DIEP Flap Practice, with a D Magazine Best Doctor callout", label:"Surgeon spotlight social ad"},
-  {cat:"Print", src:"images/lymphedema-referral-card.jpg", alt:"Information card for Dr. Joseph Dayan’s lymphedema treatment in Florida, The Institute for Advanced Reconstruction", label:"Lymphedema referral card"}
+  {cat:"Digital", src:"med-spa-promotion-social-post.jpg", alt:"IT Aesthetix social post: Lips and Folds Promo, save up to $100 on filler", label:"Med spa promotion social post"},
+  {cat:"Print", src:"skinpen-treatment-card.jpg", alt:"SkinPen micro-needling patient card", label:"SkinPen treatment card"},
+  {cat:"Digital", pages:["hospital-partnership-pitch-deck-1.jpg","hospital-partnership-pitch-deck-2.jpg","hospital-partnership-pitch-deck-3.jpg","hospital-partnership-pitch-deck-4.jpg"], alt:"Project Landmark hospital partnership deck", label:"Hospital partnership pitch deck"},
+  {cat:"Print", src:"pain-management-pull-up-banner.jpg", alt:"Seckin Pain Management pull-up banner", label:"Pain management pull-up banner"},
+  {cat:"Digital", src:"facility-opening-announcement-email.jpg", alt:"Announcement email, Redefining Specialty Surgery, for a new 14,500-square-foot facility in Red Bank, New Jersey", label:"Facility opening announcement email"},
+  {cat:"Print", pages:["abdominal-wall-reconstruction-brochure-1.jpg","abdominal-wall-reconstruction-brochure-2.jpg"], alt:"The Institute for Advanced Reconstruction tri-fold patient brochure: Abdominal Wall Reconstruction and Complex Hernia Care", label:"Abdominal wall reconstruction brochure"},
+  {cat:"Digital", src:"surgeon-spotlight-social-ad.jpg", alt:"Social ad for Dr. Joshua Lemmon: DFW’s Largest DIEP Flap Practice, with a D Magazine Best Doctor callout", label:"Surgeon spotlight social ad"},
+  {cat:"Print", src:"lymphedema-referral-card.jpg", alt:"Information card for Dr. Joseph Dayan’s lymphedema treatment in Florida, The Institute for Advanced Reconstruction", label:"Lymphedema referral card"}
 ];
 
 document.documentElement.classList.add("js");
