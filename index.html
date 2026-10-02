@@ -80,7 +80,8 @@ h1,h2,h3{font-family:var(--title);font-style:italic;font-weight:700;line-height:
 .card-sand{background:var(--sand);padding:clamp(1.8rem,4vw,3rem);position:relative;display:flex;flex-direction:column}
 .card-sand .eyebrow{color:var(--white)}
 .portrait{width:var(--pw,15rem);aspect-ratio:4/5;background:var(--mist);border:1px solid var(--navy);display:grid;place-items:center;margin:1.6rem 0 1.8rem;font:italic 1.3rem var(--title);color:var(--muted);overflow:hidden;box-shadow:8px 8px 0 var(--navy)}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.portrait{position:relative;max-width:100%}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 22%}
 .about h2{font-size:var(--fs-h2);color:var(--mist)}
 .about .lead.strong{font-weight:600}
 .about h2 span{display:block}
@@ -407,7 +408,7 @@ const cases=[
     {src:"arsa-resident-recruitment-email.jpg", label:"Resident recruitment email", alt:"ARSA recruitment email inviting graduating plastic surgery residents to explore the PrivaDemic practice model"},
     {src:"arsa-conference-program-ad.jpg", label:"Conference program ad", alt:"ARSA conference program ad, Extraordinary Careers, Nationwide Opportunities, with partner practice logos"},
     {src:"arsa-conference-exhibitor-booth.jpg", label:"Conference exhibitor booth", alt:"ARSA and The Institute for Advanced Reconstruction exhibitor booth at a medical conference, with a We’re Hiring panel and QR code"},
-    {pages:["arsa-practice-recruitment-one-pagers-1.jpg","arsa-practice-recruitment-one-pagers-2.jpg","arsa-practice-recruitment-one-pagers-3.jpg","arsa-practice-recruitment-one-pagers-4.jpg"], label:"Practice recruitment one-pagers", alt:"Front and back of two practice recruitment one-pagers for physician candidates: Center for Restorative Breast Surgery in New Orleans and Dallas, and National Center for Plastic Surgery in the Washington, DC region"},
+    {pages:["arsa-practice-recruitment-one-pagers-1.jpg","arsa-practice-recruitment-one-pagers-2.jpg","arsa-practice-recruitment-one-pagers-3.jpg","arsa-practice-recruitment-one-pagers-4.jpg"], label:"Practice recruitment one-pagers", alt:"Front and back of two practice recruitment one-pagers for physician candidates: Center for Restorative Breast Surgery in New Orleans and Dallas, and PRMA Plastic Surgery in San Antonio"},
     {pages:["arsa-affiliate-program-brochure-1.jpg","arsa-affiliate-program-brochure-2.jpg"], label:"Affiliate Program brochure", alt:"ARSA Affiliate Program tri-fold brochure for reconstructive surgeons"},
     {src:"arsa-happy-hour-sponsor-pull-up-banner.jpg", label:"Happy hour sponsor pull-up banner", alt:"ARSA Happy Hour sponsor pull-up banner, Raising the Bar on Plastic and Reconstructive Surgery"},
     {pages:["arsa-partnership-press-release-1.jpg","arsa-partnership-press-release-2.jpg"], label:"Partnership press release", alt:"Press release: ARSA strengthens Texas presence with fourth partnership, adding Regional Plastic Surgery Center"},
