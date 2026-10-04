@@ -493,7 +493,7 @@ cases.forEach((c,ci)=>{
     <p class="sum">${esc(c.card)}</p><p class="tags">${esc(c.tags)}</p>
     <a class="go" href="#${c.id}">Read the case study ${arrow}</a></div>`);
   const slides=c.work.map(i=>`<figure class="slide">${frame({...i,whole:false},i.label||c.name)}${i.label?`<figcaption>${esc(i.label)}</figcaption>`:""}</figure>`).join("");
-  main.insertAdjacentHTML("beforeend",`<div class="group lines" id="${c.id}"><div class="wrap"><h2>${c.name.length>25?c.short.map(l=>`<span class="ln">${esc(l)}</span>`).join(" "):esc(c.name)}</h2><span class="eyebrow">Case study ${n}</span></div></div>
+  main.insertAdjacentHTML("beforeend",`<div class="group lines" id="${c.id}"><div class="wrap"><h2>${c.short.map(l=>`<span class="ln">${esc(l)}</span>`).join(" ")}</h2><span class="eyebrow">Case study ${n}</span></div></div>
   <article class="case wrap" aria-labelledby="${c.id}-t">
     <div class="case-top">
       <div class="case-left reveal">
