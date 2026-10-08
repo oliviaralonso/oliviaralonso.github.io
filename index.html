@@ -67,7 +67,7 @@ h1,h2,h3{font-family:var(--title);font-style:italic;font-weight:700;line-height:
 
 /* Hero */
 .hero{min-height:75svh;background-color:var(--navy);color:var(--white);display:flex;flex-direction:column;position:relative;overflow:hidden}
-.hero-in{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:7rem;padding-bottom:4.5rem;position:relative;z-index:1}
+.hero-in{flex:1;width:100%;display:flex;flex-direction:column;justify-content:center;padding-top:7rem;padding-bottom:4.5rem;position:relative;z-index:1}
 .hero h1{font-size:clamp(2.4rem,9vw,8.5rem);line-height:.95;color:var(--sand);white-space:nowrap}
 .hero h1 .r{color:var(--mist)}
 .hero .tag{font:500 clamp(.72rem,1.25vw,.95rem)/1.6 var(--text);letter-spacing:.18em;text-transform:uppercase;color:var(--white);margin-top:2.4rem}
@@ -175,7 +175,7 @@ button.frame{width:100%;cursor:zoom-in}
 .icard .go:hover svg{transform:translateX(4px)}
 .index-more{margin-top:2rem;color:var(--navy)}
 .index-more a{font-weight:600;text-underline-offset:4px}
-.case{padding-top:var(--sec)}
+.case{padding-top:calc(var(--sec) - .4rem)} /* optical: headline glyphs sit below their line box */
 .case-top{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem)}
 .case h3{font-weight:700;font-size:var(--fs-h2);color:var(--mist)}
 .case .lead{margin-top:1.2rem;font-size:var(--fs-lead);max-width:46ch}
@@ -272,7 +272,7 @@ dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
   .slide{flex-basis:86%}
   .head{flex-direction:column;align-items:start}
   .stat{padding:1.5rem 1rem}
-  .group .wrap{flex-direction:column;gap:.3rem}
+  .group .wrap{flex-direction:column;gap:.9rem}
   .grid{grid-template-columns:1fr}
   .role div{grid-template-columns:1fr;gap:.2rem}
 }
