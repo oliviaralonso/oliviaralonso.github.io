@@ -130,7 +130,7 @@ h1,h2,h3{font-family:var(--title);font-style:italic;font-weight:700;line-height:
 .group:first-child{margin-top:0}
 .group .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-block:1.6rem}
 .group h2{font-size:var(--fs-h2)}
-@media(max-width:600px){.group h2 .ln{display:block}}
+@media(max-width:600px){.group h2 .ln,.mbr{display:block}}
 .group .eyebrow{color:var(--steel)}
 .work{padding-top:clamp(3rem,6vw,4.5rem)}
 .work:last-child{padding-bottom:clamp(5rem,9vw,7rem)}
@@ -284,6 +284,7 @@ dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
 </style>
 </head>
 <body>
+
 <a class="skip" href="#about">Skip to content</a>
 
 <nav class="nav" id="nav" aria-label="Main">
@@ -300,7 +301,7 @@ dialog .lb-prev[hidden],dialog .lb-next[hidden]{display:none}
 <header class="hero lines" id="top">
   <div class="wrap hero-in">
     <h1>Olivia <span class="r">R.</span> Alonso</h1>
-    <p class="tag">Versatile marketing professional with a passion for creative storytelling</p>
+    <p class="tag"><span class="mbr">Versatile marketing professional with</span> <span class="mbr">a passion for creative storytelling</span></p>
     <div class="cta">
       <a class="btn btn-sand" href="#work-index">See the work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-ghost" href="#about">Meet Olivia</a>
@@ -400,9 +401,9 @@ const cases=[
   lead:"Advanced Reconstructive Surgery Alliance (ARSA) unites leading reconstructive surgeons and practices in one national network to expand access to complex, specialized care. As Brand Strategist, I led the recruitment marketing that attracts the surgeons and practices needed to scale the alliance.",
   role:[["My role", "Brand strategy and recruitment marketing across decks, digital, print, and events; post-onboarding practice marketing support; internal communications"], ["Timeline", "2023 – present"]],
   challenge:"Advanced reconstructive surgery is out of reach for too many patients because the expertise is concentrated in too few places. To scale this care, ARSA had to convince top residents, fellows, academic surgeons, and private practices to join its physician-led alliance.",
-  insight:"Great surgeons don’t enter medicine to manage systems; they enter it to change lives. Recruitment works best when it speaks surgeon-to-surgeon, focusing on clinical collaboration, shared research, and expanded reach instead of business metrics. For doctors, about doctors, and steered by doctors.",
-  did:["Led recruitment marketing strategy for every audience, from residents to established practices.", "Turned the ARSA story into pitch decks, digital campaigns, and print collateral.", "Grew the annual Summit, ARSA’s flagship recruiting event, with hands-on cadaver labs and scientific symposia for national and international physicians.", "Led marketing for external recruitment events nationwide.", "Advised onboarded practices on marketing strategy and agency management.", "Managed the internal intranet for more than 1,000 employees across the network."],
-  results:[["81", "physicians joined since 2023"], ["15", "recruitment events led since 2023"], ["8", "practices joined since 2023"], ["2.5x", "Summit attendance multiplied since 2023 (130 to 320)"]],
+  insight:"Great surgeons do not enter medicine to manage systems; they enter it to change lives. Recruitment works best when it speaks surgeon-to-surgeon, focusing on clinical collaboration, shared research, and expanded reach instead of business metrics. For doctors, about doctors, and steered by doctors.",
+  did:["Led recruitment marketing strategy for every audience, from residents to established practices.", "Turned the ARSA story into pitch decks, digital campaigns, and print collateral.", "Grew the annual Summit, ARSA’s flagship recruiting event, with hands-on cadaver labs and scientific symposia for national and international physicians.", "Led marketing for external recruitment events nationwide and built a practice-match kiosk that pairs prospective surgeons with ARSA practices and captures leads at the booth.", "Advised onboarded practices on marketing strategy and agency management.", "Managed the internal intranet for more than 1,000 employees across the network."],
+  results:[["81", "physicians joined since 2023"], ["8", "practices joined since 2023"], ["2.5x", "Summit attendance multiplied since 2023 (130 to 320)"], ["15", "recruitment events led since 2023"]],
   work:[
     {pages:["arsa-recruitment-pitch-deck-1.jpg","arsa-recruitment-pitch-deck-2.jpg","arsa-recruitment-pitch-deck-3.jpg","arsa-recruitment-pitch-deck-4.jpg"], label:"Recruitment pitch deck", alt:"ARSA recruitment pitch deck: the founding vision, the national footprint, the research and innovation engine, and patient outcomes"},
     {src:"arsa-summit-save-the-date.jpg", label:"Summit save the date", alt:"Save the date for the 6th Annual ARSA Scientific Summit, April 29–30, 2027, at The Westin Jersey City Newport"},
@@ -419,13 +420,13 @@ const cases=[
  {id:"regionelle", short:["Regionelle","Med Spa"], name:"Regionelle Med Spa",
   tags:"B2C · Rebrand · Brand launch",
   card:"Luxury rebrand and launch for Regional Plastic Surgery Center’s med spa in Dallas–Fort Worth, Texas.",
-  title:"Turning a clinical med spa into a luxury lifestyle brand",
+  title:"Turning a clinical med spa into | a luxury lifestyle brand",
   lead:"Regionelle Med Spa is a luxury brand offering advanced medical aesthetics in Dallas–Fort Worth, backed by the surgical expertise of Regional Plastic Surgery Center (RPSC). As Account Executive, I spotted the opportunity to spin off RPSC’s med spa and gave it a standalone identity.",
   role:[["My role", "Opportunity identification, brand research, naming, visual identity, and positioning; creative and strategic direction of agency partners"], ["Timeline", "2025"]],
   challenge:"RPSC’s med spa operated under multiple, fragmented names, with no unified identity to anchor its market position or elevate the client experience.",
   insight:"Market research revealed room for an independent luxury lifestyle brand: feminine, aspirational, and distinct from the surgical practice, while still drawing on its clinical reputation.",
-  did:["Developed three creative directions, each with its own visual identity, manifesto, hero messaging, and positioning.", "Established Regionelle Med Spa as the practice’s feminine sister brand.", "Directed agency partners on the website and the CRM tools for exclusive patient events.", "Managed the cross-functional rollout, including an upcoming space expansion and targeted paid media."],
-  results:[["3", "creative directions delivered"], ["1", "sister brand landed and trademarked"], ["Live", "website and CRM event campaigns launched"], ["New", "physical space and digital infrastructure built for scale"]],
+  did:["Developed three creative directions, each with its own visual identity, manifesto, hero messaging, and positioning.", "Established Regionelle Med Spa as the practice’s feminine sister brand.", "Directed agency partners on the website and the CRM tools for exclusive patient events, generating 57 RSVPs in two days for one event.", "Managed the cross-functional rollout, including an upcoming space expansion and targeted paid media."],
+  results:[["57", "event RSVPs in 2 days through the new CRM"], ["1", "sister brand landed"], ["3", "creative directions delivered"], ["New", "physical space and digital infrastructure built for scale"]],
   work:[
     {pages:["regionelle-creative-direction-pitch-deck-1.jpg","regionelle-creative-direction-pitch-deck-2.jpg","regionelle-creative-direction-pitch-deck-3.jpg","regionelle-creative-direction-pitch-deck-4.jpg"], label:"Creative direction pitch deck", alt:"Medical spa rebrand deck: an overview of the three creative directions, then the Regional Refined, Retreat by Regional, and Regionelle Med Spa logos"},
     {src:"regionelle-logo-and-color-palette.jpg", label:"Logo and color palette", alt:"Regionelle Med Spa logo on deep teal with the tagline The art of becoming and a four-color palette: gold, deep teal, evergreen, and ivory"},
@@ -436,13 +437,13 @@ const cases=[
  {id:"bcnj", short:["The Breast Center","of New Jersey"], name:"The Breast Center of New Jersey",
   tags:"B2C · Brand creation · Awareness campaigns",
   card:"Brand launch and awareness marketing for a new, coordinated breast care center in New Jersey.",
-  title:"Launching one coordinated home for breast care",
+  title:"Launching one coordinated | home for breast care",
   lead:"The Breast Center of New Jersey (BCNJ) brings the full spectrum of breast care—from genetic testing, screening, and cancer surgery to advanced reconstruction and post-cancer treatment conditions—together in one network. As Account Executive, I led the brand launch and multi-channel campaign that established BCNJ as the Garden State’s premier destination for breast care.",
-  role:[["My role", "Brand identity and naming; agency direction for website development; omni-channel launch marketing including billboards, digital advertising, patient education booklet copy, print collateral, employee apparel, and statewide event activations"], ["Timeline", "2024 – 2025"]],
+  role:[["My role", "Brand identity and naming; agency direction for website development; omni-channel launch marketing including billboards, digital advertising, print collateral, employee apparel, statewide event activations, and patient education booklet copy"], ["Timeline", "2024 – 2025"]],
   challenge:"Patients navigating breast care in New Jersey often faced administrative fragmentation, bouncing between separate providers for diagnosis, treatment, reconstruction, and follow-up care. BCNJ needed a clear identity and market presence to establish authority, ensure continuity of care under one roof, and build immediate trust with patients.",
   insight:"Partner practices Premier Surgical Network and The Institute for Advanced Reconstruction already offered everything from screening and cancer removal to complex microsurgery and lymphedema care, but patients didn’t know it was all in one place. Uniting these specialists under one brand let us tell a clear story: one destination where patients stay with the same trusted team from diagnosis through full recovery.",
-  did:["Collaborated on brainstorming, naming, and visual identity to position BCNJ as a unified destination for breast health.", "Directed agency partners on the website and targeted digital assets.", "Launched the brand at 37 statewide events in 2024 and 2025, from Ocean City to MetLife Stadium.", "Designed and coordinated a North Jersey billboard campaign, magazine ads, and print collateral.", "Wrote a 60-page patient education booklet and produced event swag, pull-up banners, and team apparel."],
-  results:[["360°", "omni-channel rollout delivered across digital, print, and events"], ["60", "page patient education booklet written"], ["37", "launch events executed across New Jersey"], ["1", "North Jersey billboard campaign launched"]],
+  did:["Collaborated on brainstorming, naming, and visual identity to position BCNJ as a unified destination for breast health.", "Directed agency partners on the website and targeted digital assets.", "Designed and coordinated a North Jersey billboard campaign, magazine ads, and print collateral.", "Launched the brand at 37 statewide events in 2024 and 2025, from Ocean City to MetLife Stadium.", "Wrote a 60-page patient education booklet and produced event swag, pull-up banners, and team apparel."],
+  results:[["37", "launch events executed across New Jersey"], ["360°", "omni-channel rollout delivered across digital, print, and events"], ["60", "page patient education booklet written"], ["1", "North Jersey billboard campaign launched"]],
   work:[
     {src:"bcnj-launch-website.jpg", label:"Launch website", alt:"The Breast Center of New Jersey website homepage, The Area’s Most Comprehensive Breast Cancer Treatment Program"},
     {src:"bcnj-billboard.jpg", label:"Billboard", alt:"Breast Center of New Jersey billboard, Breast Reduction Surgery Covered by Insurance"},
@@ -497,7 +498,7 @@ cases.forEach((c,ci)=>{
   <article class="case wrap" aria-labelledby="${c.id}-t">
     <div class="case-top">
       <div class="case-left reveal">
-        <h3 id="${c.id}-t">${esc(c.title)}</h3>
+        <h3 id="${c.id}-t">${c.title.split(" | ").map(l=>`<span class="mbr">${esc(l)}</span>`).join(" ")}</h3>
         <p class="lead">${esc(c.lead)}</p>
         <dl class="role">${c.role.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${t(v)}</dd></div>`).join("")}</dl>
         <div class="results" aria-label="Results">${c.results.map(([v,l])=>`<div><b>${t(v)}</b><span>${t(l)}</span></div>`).join("")}</div>
@@ -650,5 +651,6 @@ fitStats();
 if(document.fonts) document.fonts.ready.then(fitStats);
 addEventListener("resize",fitStats);
 </script>
+
 </body>
 </html>
