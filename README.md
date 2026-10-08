@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33212382/README.md)
 # Olivia R. Alonso — Portfolio
 
 A one-page portfolio site. No build tools needed: GitHub Pages serves `index.html` as-is.
@@ -31,11 +30,7 @@ Edit `index.html` right on GitHub: click the file, then the pencil icon. Use Ctr
 
 **BCNJ community event booth photos (done).** Two photos are already in `index.html`: `bcnj-community-event-booth-1.jpg` (the booth setup, retouched and leveled) and `-2.jpg` (visitors at the booth, showing the staff T-shirt). To swap one, upload a new photo with the same file name.
 
-**Gender-affirming surgeon recruitment brochure.** Upload `gender-affirming-surgeon-recruitment-brochure-1.jpg` and `-2.jpg` (front and inside), then replace
-`{cat:"Print", label:"Gender-affirming surgeon recruitment brochure"},`
-with
-`{cat:"Print", pages:["gender-affirming-surgeon-recruitment-brochure-1.jpg","gender-affirming-surgeon-recruitment-brochure-2.jpg"], alt:"Gender-affirming surgeon recruitment brochure", label:"Gender-affirming surgeon recruitment brochure"},`
-(One-page version: use `src:"gender-affirming-surgeon-recruitment-brochure.jpg"` instead of `pages:[...]`.)
+**Gender-affirming surgeon recruitment brochure (done).** Outside and inside spreads are in `index.html` as `gender-affirming-surgeon-recruitment-brochure-1.jpg` and `-2.jpg`.
 
 **New ARSA conference booth photo.** No code change needed: upload the new photo named exactly `arsa-conference-exhibitor-booth.jpg` and GitHub replaces the old one. If your computer still shows the old photo, do a hard refresh (Ctrl+Shift+R or Cmd+Shift+R).
 
