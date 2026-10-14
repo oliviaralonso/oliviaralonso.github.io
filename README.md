@@ -30,6 +30,8 @@ Edit `index.html` right on GitHub: click the file, then the pencil icon. Use Ctr
 
 **BCNJ community event booth photos (done).** Two photos are already in `index.html`: `bcnj-community-event-booth-1.jpg` (the booth setup, retouched and leveled) and `-2.jpg` (visitors at the booth, showing the staff T-shirt). To swap one, upload a new photo with the same file name.
 
+**Regionelle office signage (done).** The "New treatment space" placeholder is now `regionelle-office-signage-1.jpg` (wall sign, cropped landscape for the thumbnail) and `-2.jpg` (glass door decal).
+
 **Gender-affirming surgeon recruitment brochure (done).** Outside and inside spreads are in `index.html` as `gender-affirming-surgeon-recruitment-brochure-1.jpg` and `-2.jpg`.
 
 **New ARSA conference booth photo.** No code change needed: upload the new photo named exactly `arsa-conference-exhibitor-booth.jpg` and GitHub replaces the old one. If your computer still shows the old photo, do a hard refresh (Ctrl+Shift+R or Cmd+Shift+R).
