@@ -30,11 +30,11 @@ Edit `index.html` right on GitHub: click the file, then the pencil icon. Use Ctr
 
 **BCNJ community event booth photos (done).** Two photos are already in `index.html`: `bcnj-community-event-booth-1.jpg` (the booth setup, retouched and leveled) and `-2.jpg` (visitors at the booth, showing the staff T-shirt). To swap one, upload a new photo with the same file name.
 
-**Regionelle office signage (done).** The "New treatment space" placeholder is now `regionelle-office-signage-1.jpg` (wall sign, cropped landscape for the thumbnail) and `-2.jpg` (glass door decal).
+**Regionelle new office space (done).** The "New office space" piece uses `regionelle-office-signage-1.jpg` (wall sign, cropped landscape for the thumbnail) and `-2.jpg` (glass door decal).
 
 **Gender-affirming surgeon recruitment brochure (done).** Outside and inside spreads are in `index.html` as `gender-affirming-surgeon-recruitment-brochure-1.jpg` and `-2.jpg`.
 
-**New ARSA conference booth photo.** No code change needed: upload the new photo named exactly `arsa-conference-exhibitor-booth.jpg` and GitHub replaces the old one. If your computer still shows the old photo, do a hard refresh (Ctrl+Shift+R or Cmd+Shift+R).
+**ARSA conference booth and practice-match kiosk (done).** `arsa-conference-booth-kiosk-1.jpg` (booth with the kiosk) and `-2.jpg` (the practice-match email the kiosk sends). The old `arsa-conference-exhibitor-booth.jpg` is no longer used.
 
 **Practice-match kiosk lead number (after its first conference).** In `index.html`, find `captures leads at the booth.` and change the end of that sentence to `captured [X] surgeon leads at its first conference.` If the number is strong, it can also replace the `["15", "recruitment events led since 2023"]` stat in the ARSA `results` line.
 
